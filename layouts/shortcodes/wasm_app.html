@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Prime Number Finder</title>
+  </head>
+  <body>
+    <input type="number" id="inputNumber" placeholder="Enter an integer..." />
+    <button id="computeButton">Compute</button>
+    <div id="output"></div>
+
+    <!-- rust_app MUST be in /assets to be detected! -->
+    {{ $wasm_path := resources.Get "rust_app/pkg/rust_app_bg.wasm" }}
+
+    <script>
+      wasm_path = "{{ $wasm_path.Permalink }}";
+    </script>
+
+    {{ $index_js := resources.Get "rust_app/www/index.js" | js.Build }}
+
+    <script type="module" src="{{ $index_js.Permalink }}"></script>
+  </body>
+</html>

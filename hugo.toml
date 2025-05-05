@@ -1,0 +1,7 @@
+baseURL = 'https://trinami.org/'
+languageCode = 'en-us'
+title = 'Trinami'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
