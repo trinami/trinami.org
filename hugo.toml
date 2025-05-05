@@ -1,4 +1,4 @@
-baseURL = 'https://trinami.org/'
+baseURL = 'https://github.trinami.io/'
 languageCode = 'en-us'
 title = 'Trinami'
 [markup]
