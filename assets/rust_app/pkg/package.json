@@ -1,0 +1,15 @@
+{
+  "name": "rust_app",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "rust_app_bg.wasm",
+    "rust_app.js",
+    "rust_app.d.ts"
+  ],
+  "main": "rust_app.js",
+  "types": "rust_app.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
