@@ -454,3 +454,120 @@ section {
 #logo {
   margin-right: 40px;
 }
+
+.link {
+  padding-left: 10px;
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size: 1.8rem;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  #wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 0;
+  }
+
+  #logo {
+    margin-right: 0;
+    font-size: 2.8rem;
+  }
+
+  .link {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  fieldset {
+    width: 100%;
+    padding: 25px;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  input, textarea, select {
+    font-size: 1.8rem;
+    padding: 20px;
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.8rem;
+    padding: 20px 30px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: calc(var(--font-size) * 1.8);
+  }
+
+  h2 {
+    font-size: calc(var(--font-size) * 1.6);
+  }
+
+  h3 {
+    font-size: calc(var(--font-size) * 1.4);
+  }
+
+  p, li {
+    font-size: 1.8rem;
+  }
+
+  blockquote {
+    padding: 25px;
+    font-size: 1.8rem;
+  }
+
+  pre {
+    padding: 25px 15px;
+    font-size: 1.6rem !important;
+  }
+
+  code, kbd {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet Optimization */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --font-size: 1.4rem;
+  }
+
+  #wrapper {
+    width: 90%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+}
